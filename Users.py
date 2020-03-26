@@ -29,7 +29,7 @@ def valid_email(email): #проверяем правильность указа�
 
 class ATHLETE(Base): #создаем класс ATHLETE, для того, чтобы обрисовать таблицу и то, какие поля в нее будут входить
     __tablename__ = "user"
-    id = sa.Column(sa.String(36), primary_key=True)
+    id = sa.Column(sa.Integer(), primary_key=True, autoincrement=True)
     first_name = sa.Column(sa.Text)
     last_name = sa.Column(sa.Text)
     gender = sa.Column(sa.Text)
